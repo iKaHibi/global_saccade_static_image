@@ -1,0 +1,38 @@
+{
+  "_comment_project": "Top-level settings for file paths and global parameters.",
+  "model_paths": {
+    "e2p_model_path": "src/apis/compound_eye_utils/libs/best_lstm_decoder2_0401.pth"
+  },
+  "saving_log_number": 32,
+  "_comment_simulation": "Parameters for the 'simulation_function' API.",
+  "simulation_params": {
+    "sim_time_len": 2.0,
+    "shift_pattern": "square",
+    "dist_type": "log_norm",
+    "shift_degree_mean": 0.35,
+    "shift_degree_std": 1.32,
+    "shift_freq_mean": 0.56,
+    "shift_freq_std": 2.64,
+    "src_img_size": 1080,
+    "_src_img_size": 2160,
+    "omm_sqrt_num": [27],
+    "__omm_sqrt_num": [180, 120, 80, 60, 27],
+    "shift_pixel": [null],
+    "img_rotate_speed": 15
+  },
+  "_comment_reconstruction": "Parameters for the 'reconstruction_function' API.",
+  "reconstruction_params": {
+    "const_batch": 4,
+    "repeat_times": 8,
+    "repeat_method": "random",
+    "upscaling_times": 4,
+    "reconstruction_mode": "ibp"
+  },
+  "metrics_to_estimate": [
+    "psnr",
+    "ssim",
+    "fsim",
+    "haarpsi",
+    "psd_similarity"
+  ]
+}
